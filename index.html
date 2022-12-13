@@ -2,133 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Unit 4 - Circles UI Kit</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <title>Unit 4 - Circles UI Kit+</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="container">
-    <header class="row">
-        <div class="col-3">
-            <a class="link" href="/">
-                <img class="img-logo" alt="circles logo" src="../images/logo.png">
-            </a>
-        </div>
-        <div class="col-9">
-            <nav class="nav">
-                <a class="nav-link" href="#type">Typography</a>
-                <a class="nav-link" href="#buttons">Buttons</a>
-                <a class="nav-link" href="#forms">Form</a>
-                <a class="nav-link" href="#images">Images</a>
-                <a class="nav-link" href="#grid">Grid</a>
-            </nav>
-        </div>
-    </header>
+  <header class="row">
+    <div class="col-3">
+      <a class="link" href="/">
+        <img class="img-logo" alt="circles logo" src="images/logo.png">
+      </a>
+    </div>
+    <div class="col-9">
+      <nav class="nav">
+        <a class="nav-link bg-hover-neon_1" href="#type">Typography</a>
+        <a class="nav-link bg-hover-neon_2" href="#buttons">Buttons</a>
+        <a class="nav-link bg-hover-neon_3" href="#forms">Form</a>
+        <a class="nav-link bg-hover-neon_4" href="#images">Images</a>
+        <a class="nav-link bg-hover-neon_5" href="#grid">Grid</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is
-                    less
-                    than 768px,
-                    the menu will be displayed vertically.</p>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <p>This is what the navigation menu looks like when the screen is at 768px or higher. When the screen is
+          less
+          than 768px,
+          the menu will be displayed vertically.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="card">
+        <h4 id="type" class="headline-secondary">Typography</h4>
+        <h2 class="headline-primary">Take a look at this amazing headline</h2>
+        <p>This is a typical paragraph for the UI Kit. <a href="#" class="text-main weight-6 bb-hover-main-dark-2">Here
+            is what a link might look
+            like</a>.
+          The
+          typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
+          No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The
+          kit comes
+          fully equipped with everything from full responsive media styling to buttons to form fields. <em>I
+            enjoy using
+            italics as well from time to time</em>.
+          Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the
+          kit but
+          this
+          amazing paragraph as well. :)</p>
+        <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes.
+          That's
+          right, block quotes that say, "Hey,
+          I'm an article you want to read and nurture."</blockquote>
+      </div>
+    </div>
+    <div class="col-4">
+      <form class="form">
+        <legend id="forms" class="headline-secondary">Form Elements</legend>
+        <img class="img-avatar" src="images/avatar.png" alt="Avatar">
+        <label class="hidden" for="username">Username:</label>
+        <input class="input" type="text" id="username" placeholder="Username">
+        <label class="hidden" for="password">Password:</label>
+        <input class="input" type="password" id="password" placeholder="Password">
+        <button class="btn default" type="submit" value="Login">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Commenting out for now for project submission to not have page differ too greatly from mock-up. Will uncomment for future framework use reference -->
+  <!-- <div class="color-container">
+    <h4 class="headline-secondary">Color classes</h4>
+    <p class="col-12">Using the $main color variable, I'll show you how the color function works! Hover over the
+      following div's to see what background is made with it's class!</p>
+    <div class="color-showcase">
+      <div class="mt-1 p-1 text-white bg-main">.bg-main</div>
+      <div class="mt-1 p-1 text-white bg-secondary">.bg-secondary</div>
+      <div class="mt-1 p-1 text-black bg-tertiary">.bg-tertiary</div>
+      <div class="mt-1 p-1 text-white bg-accent">.bg-accent</div>
+      <div class="mt-1 p-1 text-white bg-navy">.bg-navy</div>
+      <div class="mt-1 p-1 text-white bg-neon_1">.bg-neon_1</div>
+      <div class="mt-1 p-1 text-white bg-neon_2">.bg-neon_2</div>
+      <div class="mt-1 p-1 text-white bg-neon_3">.bg-neon_3</div>
+      <div class="mt-1 p-1 text-white bg-neon_4">.bg-neon_4</div>
+      <div class="mt-1 p-1 text-white bg-neon_5">.bg-neon_5</div>
+      <div class="mt-1 p-1 text-white bg-grey">.bg-grey</div>
+      <div class="mt-1 p-1 text-white bg-error">.bg-error</div>
+      <div class="mt-1 p-1 text-white bg-success">.bg-success</div>
+      <div class="mt-1 p-1 text-white bg-black">.bg-black</div>
+      <div class="mt-1 p-1 text-black bg-white">.bg-white</div>
     </div>
 
-    <div class="row">
-        <div class="col-8">
-            <div class="card">
-                <h4 id="type" class="headline-secondary">Typography</h4>
-                <h1 class="headline-primary">Take a look at this amazing headline</h1>
-                <p>This is a typical paragraph for the UI Kit. <a href="#" class="link">Here is what a link might look
-                        like</a>.
-                    The
-                    typical font family for this kit is Lato. This kit is intended for clean and refreshing web layouts.
-                    No jazz hands here, just the essentials to make dreams come true, with minimal clean web design. The
-                    kit comes
-                    fully equipped with everything from full responsive media styling to buttons to form fields. <em>I
-                        enjoy using
-                        italics as well from time to time</em>.
-                    Feel free to create the most amazing designs ever with this kit. I truly hope you enjoy not only the
-                    kit but
-                    this
-                    amazing paragraph as well. :)</p>
-                <blockquote class="blockquote">You know what really gets me going? A really nice set of block quotes.
-                    That's
-                    right, block quotes that say, "Hey,
-                    I'm an article you want to read and nurture."</blockquote>
-            </div>
-        </div>
-        <div class="col-4">
-            <form class="form">
-                <legend id="forms" class="headline-secondary">Form Elements</legend>
-                <img class="img-avatar" src="../images/avatar.png" alt="Avatar">
-                <label class="hidden" for="username">Username:</label>
-                <input class="input" type="text" id="username" placeholder="Username">
-                <label class="hidden" for="password">Password:</label>
-                <input class="input" type="password" id="password" placeholder="Password">
-                <button class="btn default" type="submit" value="Login">Login</button>
-            </form>
-        </div>
+    <div class="color-showcase">
+      <div class="mt-1 p-1 border-accent bg-hover-main">.bg-hover-main</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-light-1">.bg-hover-main-light-1</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-light-3">.bg-hover-main-light-3</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-light-5">.bg-hover-main-light-5</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-dark-1">.bg-hover-main-dark-1</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-dark-3">.bg-hover-main-dark-3</div>
+      <div class="mt-1 p-1 border-accent bg-hover-main-dark-5">.bg-hover-main-dark-5</div>
     </div>
+  </div>
 
-    <h4 id="images" class="headline-secondary">Images</h4>
+  <div class="opacity-container">
+    <h4 class="headline-secondary">Opacity classes</h4>
+    <p class="col-12">Using the $neon_1 color variable, I'll show you how the opacity classes work!</p>
+    <div class="opacity-showcase">
+      <div class="mt-1 p-1 border-navy o-10">o-10</div>
+      <div class="mt-1 p-1 border-navy o-30">o-30</div>
+      <div class="mt-1 p-1 border-navy o-50">o-50</div>
+      <div class="mt-1 p-1 border-navy o-70">o-70</div>
+      <div class="mt-1 p-1 border-navy o-90">o-90</div>
+    </div>
+  </div> -->
 
-    <div class="row">
-        <div class="col-6">
-            <img class="img-frame" src="../images/image.png" alt="sample image">
-        </div>
-        <div class="col-6">
-            <img class="img-avatar" src="../images/avatar.png" alt="Avatar">
-        </div>
-    </div>
+  <h4 id="images" class="headline-secondary">Images</h4>
 
-    <h4 id="buttons" class="headline-secondary">Buttons</h4>
+  <div class="row">
+    <div class="col-6">
+      <img class="img-frame" src="images/image.png" alt="sample image">
+    </div>
+    <div class="col-6">
+      <img class="img-avatar" src="images/avatar.png" alt="Avatar">
+    </div>
+  </div>
 
-    <div class="row">
-        <div class="col-12">
-            <button class="btn default">default</button>
-            <button class="btn success">success</button>
-            <button class="btn error">error</button>
-            <button class="btn warning">warning</button>
-            <button class="btn info">info</button>
-        </div>
-    </div>
+  <h4 id="buttons" class="headline-secondary">Buttons</h4>
 
-    <h4 id="grid" class="headline-secondary">Grid System</h4>
+  <p>The colors shown on the buttons are also representative of the background class associated with their color
+    variable. With this framework, you can add the color variable to a lot of cool stuff! </p>
 
-    <div class="row">
-        <div class="col-12 theme">.col-12</div>
+  <div class="row">
+    <div class="col-12 btn-showcase">
+      <button class="btn btn-main">.main</button>
+      <button class="btn btn-secondary">.secondary</button>
+      <button class="btn btn-tertiary">.tertiary</button>
+      <button class="btn btn-accent">.accent</button>
+      <button class="btn btn-navy">.navy</button>
+      <button class="btn btn-neon_1">.neon_1</button>
+      <button class="btn btn-neon_2">.neon_2</button>
+      <button class="btn btn-neon_3">.neon_3</button>
+      <button class="btn btn-neon_4">.neon_4</button>
+      <button class="btn btn-neon_5">.neon_5</button>
+      <button class="btn btn-grey">.grey</button>
+      <button class="btn btn-error">.error</button>
+      <button class="btn btn-success">.success</button>
+      <button class="btn btn-black">.black</button>
+      <button class="btn btn-white">.white</button>
     </div>
-    <div class="row">
-        <div class="col-6 theme">.col-6</div>
-        <div class="col-6 theme">.col-6</div>
-    </div>
-    <div class="row">
-        <div class="col-4 theme">.col-4</div>
-        <div class="col-4 theme">.col-4</div>
-        <div class="col-4 theme">.col-4</div>
-    </div>
-    <div class="row">
-        <div class="col-3 theme">.col-3</div>
-        <div class="col-3 theme">.col-3</div>
-        <div class="col-3 theme">.col-3</div>
-        <div class="col-3 theme">.col-3</div>
-    </div>
-    <div class="row">
-        <div class="col-5 theme">.col-5</div>
-        <div class="col-7 theme">.col-7</div>
-    </div>
-    <div class="row">
-        <div class="col-8 theme">.col-8</div>
-        <div class="col-4 theme">.col-4</div>
-    </div>
-    <div class="row">
-        <div class="col-7 theme centered">.centered .col-7</div>
-    </div>
+  </div>
+
+  <h4 id="grid" class="headline-secondary">Grid System</h4>
+
+  <div class="row">
+    <div class="col-12 bg-neon_1">.col-12</div>
+  </div>
+  <div class="row">
+    <div class="col-6 bg-neon_2">.col-6</div>
+    <div class="col-6 bg-neon_2">.col-6</div>
+  </div>
+  <div class="row">
+    <div class="col-4 bg-neon_3">.col-4</div>
+    <div class="col-4 bg-neon_3">.col-4</div>
+    <div class="col-4 bg-neon_3">.col-4</div>
+  </div>
+  <div class="row">
+    <div class="col-3 bg-neon_5 text-white">.col-3</div>
+    <div class="col-3 bg-neon_5 text-white">.col-3</div>
+    <div class="col-3 bg-neon_5 text-white">.col-3</div>
+    <div class="col-3 bg-neon_5 text-white">.col-3</div>
+  </div>
+  <div class="row">
+    <div class="col-5 bg-neon_4">.col-5</div>
+    <div class="col-7 bg-accent">.col-7</div>
+  </div>
+  <div class="row">
+    <div class="col-8 bg-accent">.col-8</div>
+    <div class="col-4 bg-neon_3">.col-4</div>
+  </div>
+  <div class="row">
+    <div class="col-7 bg-secondary centered">.centered .col-7</div>
+  </div>
 
 </body>
 

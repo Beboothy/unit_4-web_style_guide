@@ -1,0 +1,64 @@
+.container {
+  max-width: 1400px;
+}
+
+.container,
+.centered {
+  display: block;
+  @include margin-inline;
+}
+
+.typography-example {
+  justify-content: space-around;
+
+  h1, h2, h3, h4, h5, p {
+    margin: 0;
+  }
+
+  div {
+    @include flex($just: center);
+    align-items: center;
+  }
+}
+
+.color-container,
+.opacity-container {
+  @include newContainer;
+}
+
+
+.color-showcase,
+.opacity-showcase {
+  @include flex($wrap: wrap, $just: space-around);
+  max-width: $max-width;
+
+  div {
+    &.p-1 {
+      @include flex($just: center);
+      align-items: center;
+
+      width: 200px;
+      min-height: 100px;
+      text-align: center;
+    }
+  }
+}
+
+.opacity-showcase {
+  @include center(100%);
+}
+
+
+@include mq-width('tablet', min) {
+  .btn-showcase {
+    @include flex($dir: row, $wrap: wrap, $just: center);
+
+    button {
+      &.btn {
+        width: 225px;
+        text-transform: none;
+        margin: 10px 5px 0;
+      }
+    }
+  }
+}
